@@ -1,55 +1,322 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Developer Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <div class="header-content">
-      <h1>Developer Portfolio</h1>
-      <nav>
-        <ul class="menu">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+    <title>Thirumalai Portforlio</title>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Welcome to my portfolio! </p>
-    <div class="profile-pic">
-      <img src="profile-pic.jpg" alt="Profile Picture">
-    </div>
-  </section>
+    <link rel="stylesheet" href="styles.css">
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project" ">
-        <ul><li>
-      <h3>Leave Management System</h3></li></ul>
-      <p>A Leave Management System (LMS) is an essential tool for organizations to efficiently handle employee leave requests, track absences, and ensure proper staffing levels. It provides a centralized platform for employees to request leaves, managers to approve or deny requests, and HR departments to maintain accurate records.</p>
-    </div>
-    <div class="project">
-        <ul><li>
-      <h3>Stock Market Prediction</h3></li></ul>
-      <p>Stock market prediction refers to the process of using various analytical techniques, statistical models, and machine learning algorithms to forecast the future movements of stock prices and market trends. It is a complex and dynamic field that involves analyzing historical data, market indicators, news sentiment, and macroeconomic factors to make informed predictions about the direction of stock prices.</p>
-    </div>
-  </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: thirumalai2024@gmail.com</p>
-    <p>Phone: +91 9384312020</p><br>
-  </section>
+  </head>
 
-  <footer>
-    <p>&copy; 2024 Developer Portfolio</p>
-  </footer>
-</body>
-</html>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img src="/assets/png/profile.jpg" alt="Ram Maheshwari Logo Image" class="header__logo-img">
+          </div>
+          <span class="header__logo-sub">Thirumalai</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#projects" class="header__link"> Projects </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hey, I'm Thirumalai</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            Final Year Student in Velammal College of Engineering and technology
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="./#projects" class="btn btn--bg">Projects</a>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a href="https://www.linkedin.com/in/thiru-malai-568a99209/" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
+            <img src="/assets/png/linkedin.png" alt="Linkedin Profile" class="home-hero__social-icon">
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="https://github.com/ThiruMalai31" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
+            <img src="/assets/png/github.png" alt=" Github Profile" class="home-hero__social-icon">
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="https://www.hackerrank.com/profile/thirumalai2024" class="home-hero__social-icon-link home-hero__social-icon-link--bd-none" rel="noreferrer" target="_blank">
+            <img src="/assets/png/hackerRank.png" alt=" HackerRank Channel" class="home-hero__social-icon">
+          </a>
+        </div>
+      </div>
+      <!-- <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div> -->
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub">
+           Solved more than 400+ problems in various Coding Platforms. Certificate in HackerRank problem Solving (Basic,Intermediate).
+          </span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                I'm  <strong>interested in Developer Role </strong> building
+                and managing the Front-end projects and programming. Check out some of
+                my work in the <strong>Projects</strong> section.
+              </p>
+              <p class="about__content-details-para">
+                I also like sharing content related to the stuff that I have
+                learned over the years . so it
+                can help other people to Feel free to Connect
+                or Follow me on my
+                <a rel="noreferrer" href="https://www.linkedin.com/in/thiru-malai-568a99209/" target="_blank">Linkedin</a>
+    
+            
+              </p>
+              <p class="about__content-details-para">
+                I'm open to <strong>Job</strong> opportunities where I can
+                contribute, learn and grow. If you have a good opportunity that
+                matches my skills and experience then don't hesitate to
+                <strong>contact</strong> me.
+              </p>
+            </div>
+            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">C++</div>
+              <div class="skills__skill">Data Structures and Algorithm</div>
+              <div class="skills__skill">OOPS</div>
+              <!-- <div class="skills__skill">SASS</div>
+              <div class="skills__skill">GIT</div>
+              <div class="skills__skill">Github</div>
+              <div class="skills__skill">Responsive Design</div>
+              <div class="skills__skill">SEO</div>
+              <div class="skills__skill">Terminal</div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub">
+            Here you will find some of the personal projects that I
+            created with each project containing its own case study
+          </span>
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="./assets/png/Drum Kit.png" alt="Software Screenshot" class="projects__row-img" loading="lazy">
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Drum Kit Game</h3>
+              <p class="projects__row-content-desc">
+                DrumStick game is a successful project that I created
+                with HTML,CSS,JavaScript
+              </p>
+              <a class="btn btn--med btn--theme dynamicBgClr" href="/project-1.html" target="_blank">Case Study</a>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="/assets/png/Dice game.png" alt="Software Screenshot" class="projects__row-img" loading="lazy">
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Dice Game </h3>
+              <p class="projects__row-content-desc">
+                Dice Game is a Two Player Game , which is created by HTML,CSS,JavaScript
+              </p>
+              <a class="btn btn--med btn--theme dynamicBgClr" href="/project-2.html" target="_blank">Case Study</a>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="./assets/png/To-Do list.png" alt="Software Screenshot" class="projects__row-img" loading="lazy">
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title"> To-Do List</h3>
+              <p class="projects__row-content-desc">
+              To-Do List is my First Basic Project using JavaScript . It was a great
+                experience for me in the frontend.
+              </p>
+              <a class="btn btn--med btn--theme dynamicBgClr" href="/project-3.html" target="_blank">Case Study</a>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="./assets/png/Quiz Game.png" alt="Software Screenshot" class="projects__row-img" loading="lazy">
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Quiz Game</h3>
+              <p class="projects__row-content-desc">
+                Quiz Game is completed using HTML,CSS,JavaScript.
+              </p>
+              <a class="btn btn--med btn--theme dynamicBgClr" href="/project-4.html" target="_blank">Case Study</a>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="./assets/png/XOXO.png" alt="Software Screenshot" class="projects__row-img" loading="lazy">
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">XOXO Game</h3>
+              <p class="projects__row-content-desc">
+                XOXO Game is completed using HTML,CSS,JavaScript.
+              </p>
+              <a class="btn btn--med btn--theme dynamicBgClr" href="/project-5.html" target="_blank">Case Study</a>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="./assets/png/movie.jpg" alt="Software Screenshot" class="projects__row-img" loading="lazy">
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Movie Ticket Booking</h3>
+              <p class="projects__row-content-desc">
+                Movie Ticket Booking is a Completely OOPS concept based Project.
+              </p>
+              <a class="btn btn--med btn--theme dynamicBgClr" href="/project-6.html" target="_blank">Case Study</a>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="./assets/png/taxi.svg" alt="Software Screenshot" class="projects__row-img" loading="lazy">
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Taxi Booking</h3>
+              <p class="projects__row-content-desc">
+                Taxi Ticket Booking is a Completely OOPS concept based Project.
+              </p>
+              <a class="btn btn--med btn--theme dynamicBgClr" href="/project-7.html" target="_blank">Case Study</a>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="./assets/png/Railway image.svg" alt="Software Screenshot" class="projects__row-img" loading="lazy">
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Railway Reservation System</h3>
+              <p class="projects__row-content-desc">
+                Railway Reservation System is a Completely OOPS concept based Project.
+              </p>
+              <a class="btn btn--med btn--theme dynamicBgClr" href="/project-8.html" target="_blank">Case Study</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            Feel free to Contact me by submitting the form below and I will get
+            back to you as soon as possible
+          </span>
+        </h2>
+        <div class="contact__form-container">
+          <form action="#" class="contact__form" method="post"><input type="hidden" name="form-name" value="form 1">
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Name</label>
+              <input required="" placeholder="Enter Your Name" type="text" class="contact__form-input" name="name" id="name">
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input required="" placeholder="Enter Your Email" type="email" class="contact__form-input" name="email" id="email">
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Message</label>
+              <textarea required="" cols="30" rows="10" class="contact__form-input" placeholder="Enter Your Message" name="message" id="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/thiru-malai-568a99209/">
+                <img class="main-footer__icon" src="/assets/png/linkedin.png" alt="Ram Maheshwari Linkedin Profile">
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/ThiruMalai31">
+                <img class="main-footer__icon" src="/assets/png/github.png" alt="RammCodes Github Profile">
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://www.hackerrank.com/profile/thirumalai2024">
+                <img class="main-footer__icon" src="/assets/png/hackerRank.png" alt="RammCodes Twitter Profile">
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h2 class="heading heading-sm text-lt">Thirumalai</h2>
+            <p class="main-footer__short-desc">
+              Final Year Student in Velammal College of Engineering and Technology.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+ 
+</div></body></html>
